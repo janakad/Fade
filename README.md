@@ -20,7 +20,7 @@ Then add javascript and the css:
 First set options for fade function by:
 
 ```javascript
-Fade.options={
+Fade.options = {
   type:'in',
   id:'my-div',
   duration:'2s'
@@ -48,7 +48,7 @@ You can define the type of the selectors with ```options``` variable. Examples:
 ###Class selectors
 
 ```javascript
-Fade.options={
+Fade.options = {
   type:'in',
   class:'my-class',
   duration:'2s'
@@ -58,7 +58,7 @@ Fade.options={
 ###Tag selectors
 
 ```javascript
-Fade.options={
+Fade.options = {
   type:'in',
   tag:'div',
   duration:'2s'
