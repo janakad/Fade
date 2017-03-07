@@ -1,0 +1,52 @@
+@mixin keyframeAnimation($animation) {
+  @-webkit-keyframes #{$animation} {
+    @content;
+  }
+  @-moz-keyframes #{$animation} {
+    @content;
+  }
+  @-ms-keyframes #{$animation} {
+    @content;
+  }
+  @-o-keyframes #{$animation} {
+    @content;
+  }
+  @keyframes #{$animation} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@include keyframeAnimation(fade-in-animation) {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    display: block;
+  }
+}
+
+@include keyframeAnimation(fade-out-animation) {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+
