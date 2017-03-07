@@ -1,5 +1,5 @@
 # Fade
-A simple JavaScript plugin for fade-in fade-out effect with CSS 3 key frame animations.
+A simple JavaScript plugin for fade-in fade-out effect with CSS 3 key frame animations. No jQuery required. A pure JavaScript solution.
 
 #Installation
 
@@ -36,7 +36,33 @@ Fade.start();
 #Callbacks:
 
 ```javascript
-Fade.callBackFunction=function(arguments){
+Fade.callBackFunction = function(arguments){
 //your function here
 }
 ```
+
+#Selectors
+
+You can define the type of the selectors with ```options``` variable. Examples:
+
+###Class selectors
+
+```javascript
+Fade.options={
+  type:'in',
+  class:'my-class',
+  duration:'2s'
+}
+```
+
+###Tag selectors
+
+```javascript
+Fade.options={
+  type:'in',
+  tag:'div',
+  duration:'2s'
+}
+```
+
+
